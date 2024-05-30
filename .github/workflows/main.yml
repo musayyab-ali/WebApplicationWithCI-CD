@@ -2,7 +2,12 @@ name: .NET Core CI/CD
 
 on:
   push:
-    branches: [ main ]
+    branches: 
+      - master
+      - main
+  pull_request:
+    branches: 
+      - main
 
 jobs:
   build:
@@ -37,8 +42,8 @@ jobs:
           path: ./output
 
       # Step to deploy to Azure Web Apps
-      - name: Deploy to Azure
-        uses: azure/webapps-deploy@v2
-        with:
-          app-name: "your-app-name"
-          package: ./output
+     # - name: Deploy to Azure
+       # uses: azure/webapps-deploy@v2
+      #  with:
+        #  app-name: "your-app-name"
+        #  package: ./output
