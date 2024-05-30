@@ -1,0 +1,44 @@
+name: .NET Core CI/CD
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step to check out the repository
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # Step to restore NuGet packages
+      - name: Restore NuGet packages
+        run: dotnet restore
+
+      # Step to build the application
+      - name: Build
+        run: dotnet build --configuration Release
+
+      # Step to run tests
+      - name: Test
+        run: dotnet test --no-build --verbosity normal
+
+      # Step to publish the build artifacts
+      - name: Publish
+        run: dotnet publish --configuration Release --output ./output
+
+      # Step to archive the build artifacts
+      - name: Archive Artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: published-artifacts
+          path: ./output
+
+      # Step to deploy to Azure Web Apps
+      - name: Deploy to Azure
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: "your-app-name"
+          package: ./output
