@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebAppWithCICD")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8347b1715cead6992550164febb953a4a2140dda")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebAppWithCICD")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebAppWithCICD")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

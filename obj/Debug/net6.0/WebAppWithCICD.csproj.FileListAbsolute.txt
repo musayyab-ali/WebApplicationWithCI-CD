@@ -28,3 +28,4 @@ D:\Vs Projects\WebAppWithCICD\WebAppWithCICD\obj\Debug\net6.0\refint\WebAppWithC
 D:\Vs Projects\WebAppWithCICD\WebAppWithCICD\obj\Debug\net6.0\WebAppWithCICD.pdb
 D:\Vs Projects\WebAppWithCICD\WebAppWithCICD\obj\Debug\net6.0\WebAppWithCICD.genruntimeconfig.cache
 D:\Vs Projects\WebAppWithCICD\WebAppWithCICD\obj\Debug\net6.0\ref\WebAppWithCICD.dll
+D:\Vs Projects\WebAppWithCICD\WebAppWithCICD\obj\Debug\net6.0\WebAppWithCICD.sourcelink.json
